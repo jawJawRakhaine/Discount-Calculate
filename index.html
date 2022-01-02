@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Calculation With JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Discount Calculator</h1>
+      <form>
+        <div class="input-item">
+          <label for="amount">Enter bill amount: </label>
+          <input
+            type="text"
+            id="amount"
+            placeholder="Enter total bill amount"
+          />
+        </div>
+
+        <div class="input-item">
+          <label for="discount-percentage">Enter discount (%):</label>
+          <input
+            type="number"
+            name="percentage"
+            id="discount-percentage"
+            placeholder="Enter discount %"
+            max="50"
+            min="0"
+          />
+        </div>
+
+        <div class="input-item">
+          <label for="discount-amount">Discount amount:</label>
+          <input type="text" id="discount-amount" disabled />
+        </div>
+
+        <div class="input-item">
+          <label for="pay" aria-disabled="true">Final Pay:</label>
+          <input type="text" id="pay" disabled />
+        </div>
+
+        <button type="submit" class="calculate">Calculate</button>
+        <input type="reset" value="Reset" class="reset" />
+      </form>
+    </div>
+  </body>
+</html>
